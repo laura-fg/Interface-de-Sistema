@@ -1,0 +1,157 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> System</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/607a1a0d28.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+
+   <div class="logo"> <img src="img/logo.png"> </div> <!-- LOGO-->
+
+
+    <nav class="menu-entrar "> <!-- MENU DROPDOWN-->
+      <ul>
+         <li class="view"><p> MENU <i class="fas fa-chevron-down"></i> </p>
+         <ul class="opcoes" >
+             <li class="semi" > <a href="#"> MINHA CONTA </a></li>
+             <li> <a href="#">CONSULTAS</a></li>
+             <li> <a href="#">MÉDICOS</a></li>
+             <li> <a href="#">PACIENTE</a></li>
+             <li> <a href="#valor">VALORES</a></li>
+
+         </ul>
+        </li>
+        </ul>
+     </nav><!-- FECHAMENTO MENU DROPDOWN-->
+
+     </header>
+
+    <div class="container">
+     <div class="pesquisa">
+          
+   <h1>CONSULTAR AGENDA <i class="far fa-calendar-check"></i></h1> 
+      <form>
+      
+       <input type="text" name="medico" placeholder="Médico">
+       <input type="text" name="codigo" placeholder="Código do médico">
+       <input type="text" name="paciente" placeholder="Paciente">
+       <input type="text" name="cpf" placeholder="CPF 000.000.000-00">
+       <input type="date" name="data" placeholder="">
+         <select name="select">
+          <option value="disponivel">Disponivel</option> 
+          <option value="indisponivel" selected>Indisponivel</option>
+          <option value="status" selected>Status</option>
+         </select>
+
+      <select name="select">
+        <option value="Cardiologia">Cardiologia</option> 
+        <option value="Clínico Geral" selected>Clínico Geral</option>
+        <option value="Fonoaudiologia" selected>Fonoaudiologia</option>
+        <option value="Dermatologia">Dermatologia</option> 
+        <option value="Gastroenterologia" selected>Gastroenterologia</option>
+        <option value="Endocrinologia" selected>Endocrinologia</option>
+        <option value="Ginecologia / Obstetrícia">Ginecologia / Obstetrícia</option> 
+        <option value="Nutricionista" selected>Nutricionista</option>
+        <option value="Pediatria" selected>Pediatria</option>
+        <option value="Pneumologia" selected>Pneumologia</option>
+        <option value="Psiquiatria">Psiquiatria</option> 
+        <option value="Psicologia" selected>Psicologia</option>
+        <option value="Traumatologia" selected>Traumatologia</option>
+        <option value="Urologia">Urologia</option>
+        <option value="especialidade" selected>Especialidade</option> 
+      </select>
+      <button> Pesquisar<i class="fas fa-search"></i> </button>
+
+      </form> <!-- FORMULÁRIO DE PESQUISA-->
+
+     </div> <!-- FECHAMENTO DIV PESQUISA-->
+
+     <aside>
+       <h2>  LEMBRETES <i class="fas fa-thumbtack"></i> </h2>
+       <form class="lembretes">
+         <input type="radio" name="webmaster" value="sm"/> Ligar para confirmar as consultas.<br/>
+         <input type="radio" name="webmaster" value="sm"/>  Solicitar reposição de material.<br />
+         <input type="radio" name="webmaster" value="sm"/> Remarcar agenda do Dr Ronaldo 24/11.<br />
+         <input type="text" name="lembrete" placeholder="Incluir novo lembrete">
+            <button> Incluir </button>
+            <button> Excluir </button>
+          </form>
+     </aside>
+</div>
+
+
+<div class="main">
+  <div class="valores"> 
+     <h3 id="valor"> CONSULTAR VALORES</h3>
+     <select name="especialidades">
+      <option value="Cardiologia">Cardiologia</option> 
+        <option value="Clínico Geral" selected>Clínico Geral</option>
+        <option value="Fonoaudiologia" selected>Fonoaudiologia</option>
+        <option value="Dermatologia">Dermatologia</option> 
+        <option value="Gastroenterologia" selected>Gastroenterologia</option>
+        <option value="Endocrinologia" selected>Endocrinologia</option>
+        <option value="Ginecologia / Obstetrícia">Ginecologia / Obstetrícia</option> 
+        <option value="Nutricionista" selected>Nutricionista</option>
+        <option value="Pediatria" selected>Pediatria</option>
+        <option value="Pneumologia" selected>Pneumologia</option>
+        <option value="Psiquiatria">Psiquiatria</option> 
+        <option value="Psicologia" selected>Psicologia</option>
+        <option value="Traumatologia" selected>Traumatologia</option>
+        <option value="Urologia">Urologia</option>
+        <option value="especialidade" selected>Especialidade</option> 
+      </select>
+      <input type="text" name="valor" placeholder="Valor">
+  </div>
+
+  <div class="laudos">
+    <h3> RESULTADOS</h3>
+    <input type="text" name="chave" placeholder="Digite a chave se acesso">
+    <button> Pesquisar<i class="fas fa-search"></i> </button>
+  </div>
+
+  <div class="parceiros">
+      <h3> CLÍNICAS PARCEIRAS</h3>
+      <select name="parcerias">
+        <option value="parceira">D&A Radiologia</option> 
+          <option value="parceira" selected>Laboratório São Augusto</option>
+          <option value="parceira" selected>Radiologia Da Orla</option>
+          <option value="parceira">Dermatologia</option>
+          <option value="parceira" selected>Gastroenterologia</option>
+          <option value="parceira" selected>Cuide-se bem</option>
+          <option value="parceira"> Laboratório Senhor dos Passos</option> 
+        </select>
+        <input type="text" name="endereco" placeholder="Endereço">
+        <input type="text" name="telefone" placeholder="Telefone">
+  </div>
+</div>
+
+
+   <footer>
+     <div>
+       <h4>RESPONSÁVEIS TÉCNICOS</h4>
+       <p> Analista José Carlos Mendes</p>
+       <p> Analista Ana Clara Fontoura</p>
+     </div> 
+     
+     <div>
+       <h4>INFORMAÇÕES</h4>
+       <p> Suporte Técnico</p>
+       <p> Manutenção do produto</p>
+     </div>
+
+     <div><h4> FALE CONOSCO</h4>
+     <p>Suporte remoto</p>
+     <p>Agendar visita técnica</p> 
+     </div>
+     </footer>
+  
+  </body>
+</html>
